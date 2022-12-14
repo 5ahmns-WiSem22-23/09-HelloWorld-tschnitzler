@@ -10,17 +10,19 @@ public class HelloMethoden : MonoBehaviour
         //1) Verwende Start Methode
         Debug.Log("Hallo Methoden!");
 
-        //at 2) Instanzvariable nutzen
-        Debug.Log("before startValue: " + startValue);
-        Increment();
+        //2) Instanzvariable nutzen
+        private int startValue = 0;
 
-        //at 3)
-        Debug.Log("before startValue3: " + startValue3);
-        IncrementByX(Random.Range(1, 10));
-        Debug.Log("after start Value");
+        //3 Der Wert der dazugezählt wird ist bei Deklaration noch nicht bekannt
+        // t.B: Random oder User Input
+        private int startValue3 = 0;
 
-        //at 4)
-        Debug.Log("before startValue");
+        //4) Copy by Value
+        private int startValue4 = 10;
+
+        //5) Return
+        private int startValue5 = 20;
+
 
         
     }
