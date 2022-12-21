@@ -1,8 +1,10 @@
+/*
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HelloMethoden : MonoBehaviour
+//public class HelloMethoden : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -20,7 +22,7 @@ public class HelloMethoden : MonoBehaviour
         //4) Copy by Value
         private int startValue4 = 10;
 
-        //5) Return
+        //5) incl. return
         private int startValue5 = 20;
 
 
@@ -47,3 +49,4 @@ public class HelloMethoden : MonoBehaviour
         
     }
 }
+*/
