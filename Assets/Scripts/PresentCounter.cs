@@ -17,7 +17,7 @@ public class PresentCounter : MonoBehaviour
     {
         presentText.text = "PRESENTS: " + currentPresents.ToString();
     }
-
+     
     public void IncreasePresents(int v)
     {
         currentPresents += v;
