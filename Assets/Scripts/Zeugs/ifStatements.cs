@@ -36,7 +36,7 @@ public class ifStatements : MonoBehaviour
             case 2:
                 Debug.Log("Good");
                 break;
-            default:
+  //          default:
                 Debug.Log("everything shit");
         }
     }
