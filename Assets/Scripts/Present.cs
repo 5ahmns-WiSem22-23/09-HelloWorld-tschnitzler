@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Present : MonoBehaviour
 {
     public int value;
+    private PresentCounter presentCounter;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        presentCounter = FindObjectOfType<PresentCounter>();
     }
 
     // Update is called once per frame
@@ -22,8 +24,8 @@ public class Present : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            presentCounter.IncreasePresents(value);
             Destroy(gameObject);
-            PresentCounter.instance.IncreasePresents(value);
         }
     }
 }
