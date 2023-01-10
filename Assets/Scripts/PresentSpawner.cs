@@ -21,18 +21,17 @@ public class PresentSpawner : MonoBehaviour
 
     void Start()
     {
-        // Start spawning sprites at the specified interval
-        InvokeRepeating("SpawnSprite", spawnInterval, spawnInterval);
+        SpawnSprite();
     }
 
-    void SpawnSprite()
+    public void SpawnSprite()
     {
         // Choose a random position for the sprite
         float xPos = Random.Range(xMin, xMax);
         float yPos = Random.Range(yMin, yMax);
 
         // Flip a coin to decide which sprite to spawn
-        if (Random.Range(0, 2) == 0)
+        if (Random.Range(0, 1) == 0)
         {
             // Spawn the first sprite
             GameObject sprite = Instantiate(spritePrefab1, new Vector2(xPos, yPos), Quaternion.identity);
@@ -44,4 +43,3 @@ public class PresentSpawner : MonoBehaviour
         }
     }
 }
-
